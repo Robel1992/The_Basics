@@ -1,0 +1,310 @@
+<!--Declare the DocType of an HTML Document-->
+
+<!DOCTYPE html>
+
+<!--Everything in your html code should go in between html tag-->
+<html>
+
+<!--Define the Head and Body of an HTML Document-->
+<!--This adds another level of organization to html page-->
+<!--Any markup with information about your page would go into the head tag
+Any markup with the content of the page (what displays for a user) would go into the body tag-->
+
+<!--Mata data elements such as link, meta, title, and style, typically go in the head element-->
+<head>
+    <title>Web Design HTML</title>
+    <!--Linking you css file to HTML file-->
+    <link rel="stylesheet" href="Basic_CSS.css">
+    <!--Import a Google Font-->
+    <!--To import a Google Font, you can copy the font(s) URL 
+        from the Google fonts library and then past it in your
+         HTML. We will import the Lobster font.-->
+
+         <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+
+    <!--Now you can use the Lobster font in your CSS by using Lobster as the FAMILY_NAME as in the following example-->
+
+    <!--font-family: FAMILY_NAME, GENERIC_NAME;-->
+
+    <!--Use CSS Selectors to Style Elements-->
+    <style>
+     /*declare all h2 style elements in the HTML page red*/ 
+        h2 {
+            color: red;
+            font-family: Lobster;
+        }
+
+    /*Use a CSS Class to style an Element*/
+        .red-text {
+            color: red;
+        }
+    /*Once you've created the "blue-text" class within the style tag (or in the css 
+    folder you can add the the class to any of the elements with in the HTML page)*/
+    </style>
+</head>
+
+<body>
+<h1>Hello</h1>
+<!--CSS: Change the Color of Text-->
+<!--CSS: Cascading Style Sheets-->
+<h2 style="color: blue;">CatPhotoApp</h2> <!--CSS style change>> setting CatPhotoApp to Blue-->
+
+<!--CSS: Use a CSS Class to stule an Element-->
+<h2 class="red-text">CatPhotoApp RED</h2>
+
+<h3>SEX IS A RIGHT!</h3>
+
+<!--p elements are the preferred element 
+    for paragraph text on websites. 
+    p is short for "paragraph".-->
+
+<p class="red-text">Hello Paragraph</p> <!--CSS: Style Multiple Elements with a CSS Class-->
+
+<!--Web developers traditionally 
+    use lorem ipsum text as placeholder text.-->
+
+    <p>Kitty ipsum dolor sit amet, shed everywhere 
+        shed everywhere stretching attack your ankles 
+        chase the red dot, hairball run catnip eat 
+        the grass sniff.</p>
+
+<!--HTML5 introduces more descriptive HTML tags. 
+    These include main, header, footer, nav, video, 
+    article, section and others.-->
+
+    <main>
+
+        
+<!--You can add images to your website by using the img element, 
+    and point to a specific image's URL using the src attribute.-->
+
+
+<!--All img elements must have an alt attribute. The text inside 
+    an alt attribute is used for screen readers to improve 
+    accessibility and is displayed if the image fails to load.
+
+<img src="https://www.your-image-source.com/your-image.jpg" 
+alt="Author standing on a beach with two thumbs up.">-->
+       
+        <img class="larger-image thin-red-border"src="https://bit.ly/fcc-relaxing-cat" alt="Relaxing Cat">
+       
+        <p>Kitty ipsum dolor sit amet, shed everywhere 
+            shed everywhere stretching attack your ankles 
+            chase the red dot, hairball run catnip eat the
+             grass sniff.</p>
+        
+        <p>Purr jump eat the grass rip the couch scratched 
+            sunbathe, shed everywhere rip the couch sleep 
+            in the sink fluffy fur catnip scratched.</p>
+        
+        </main>
+
+
+
+<!--You can use a (anchor) elements to link to content 
+outside of your web page.
+
+a elements need a destination web address 
+called an href attribute. 
+
+Here's an example:
+
+<a href="https://freecodecamp.org">this links to freecodecamp.org</a>-->
+
+<a href="http://freecatphotoapp.com"> cat photos </a>
+
+<a href="#footer" target="_blank">Jump to Bottom</a>
+<!--a (anchor) elements can also be used to create 
+    internal links to jump to different sections 
+    within a webpage.-->
+
+<!--To create an internal link, you assign a link's href 
+    attribute to a hash symbol # plus the value of the 
+    id attribute for the element that you want to internally 
+    link to, usually further down the page. You then need to 
+    add the same id attribute to the element you are linking to. 
+    An id is an attribute that uniquely describes an element.-->
+
+<!-- the [target="_blank"] attribute causes the linked 
+    document to open in a new window tab.-->
+
+<footer id="footer">Copyright Cat Photo App</footer>
+
+<!--Here's a way to add a link within a Paragraph-->
+<p>
+    Here's a <a target="_blank" href="http://freecodecamp.org"> link to freecodecamp.org</a> for you to follow.
+  </p>
+
+  <!--Sometimes you don't know where a link is going, so you can 
+    put in [href="#"] in replacement of a link-->
+
+<!--Turn an image into a link!-->
+<!--<a href="#"><img src="https://bit.ly/fcc-running-cats" 
+    alt="Three kittens running towards the camera."></a>-->
+<!--Nest an image tag within an "a" element-->
+
+<!--Create a Bulleted Unordered List-->
+<!--Unordered list start with the opening <ul>-->
+<!--Followed by any number of <li> elements-->
+
+<ul>
+    <li>milk</li>
+    <li>cheese</li>
+    <li>Things that make me shit</li>
+</ul>
+
+<!--Create a Ordered List-->
+<!--Ordered list start with the opening <ol>-->
+<!--Followed by any number of <li> elements-->
+
+<ol>
+    <li>Garfield</li>
+    <li>Sylvester</li>
+</ol>
+
+<!--Create a Text Field-->
+<!--Create a web form: [input] elements are a 
+    convenient way to get input from your user. 
+
+    You can creat a text input like this: 
+
+    <input type="text"> 
+    
+    Note: input elements are self-closing-->
+
+<input type="text">
+
+<!---Add Placeholder Text to a Text Field-->
+<!--Placeholder text is what is in the input 
+    box before the user puts their information in. 
+
+    You can creat a placeholder text like so:-->
+
+<input type="text" placeholder="This is a placeholder">
+
+<!--Create a Form Element-->
+<!--You can build a web form that sends information/data 
+    to a server just using HTML. You can do this by 
+    specifying an action on your form element like this:-->
+
+<form action="/url-where-you-want-to-submit-form-data">...</form>
+
+<form action="/url-where-you-want-to-submit-form-data">
+    <input type="text" placeholder="This is form-data">
+</form>
+
+<!--Add a Submit Button to a Form-->
+<!--Clicking this button will send the data from your form to 
+    the URL you specified with your form's aciton attribute. 
+    For example:-->
+
+<button type="submit"> This a random button</button>
+
+<!--All together with the Form tag and input tag, it looks like this:-->
+
+<form action="/url-where-you-want-to-submit-form-data">
+    <input type="text" placeholder="This is form-data">
+    <button type="submit"> This buttom submits the form</button>
+</form>
+
+<!--Use HTML5 to Require a Field-->
+<!--You can reuire form fields so that your user will not be 
+    able to submit your form unitl he or she has filled them out.-->
+
+<input type="text" required>
+
+<!--Create a Set of Radio Buttons-->
+<!--Use radio buttons when you want the user to give you 
+    only one answer out of multiple options.-->
+<!--Each of the radio buttons can be nested within its own label element
+By wrapping an input inside of a label element it will automatically 
+associate the radio button input with the label element surronding it-->
+
+<label>
+    <input type="radio" name="indoor-outdoor"> Indoor
+</label>
+
+<!--It's considered good practice to set a for attribute on the label 
+    element, with a value that matches the value of the id attribut of 
+    the input element.-->
+<form action="/url-where-we-send-the-radio-info">
+    <label for="indoor">
+        <input id="indoor" type="radio" name="indoor-outdoor"> Indoor
+    </label>
+
+    <label for="outdoor">
+        <input id="outdoor" type="radio" name="indoor-outdoor"> Outdoor
+    </label>
+</form>
+
+<!--usually placed within a form tag-->
+
+<!--Create a Set of Checkboxes-->
+<!--forms commonly use checkboxes for questions that may have more than one answer-->
+
+<form action="/url-where-we-send-the-checkbox-info">
+
+    <label for="loving">
+        <input id="loving" type="checkbox" name="personality"> Loving 
+    </label>
+
+</form>
+
+<!--Use the value attribut with Radio Buttons and Checkboxes-->
+<!--When a form gets submitted, the data is sent to the server and includes entries 
+    for the options selevted. Inputs of type radio and chekcbox report their values 
+    from the value attribute.-->
+
+    <label for="indoor"> 
+        <input id="indoor" value="indoor" type="radio" name="indoor-outdoor">Indoor 
+    </label>
+
+    <label for="outdoor"> 
+        <input id="outdoor" value="outdoor" type="radio" name="indoor-outdoor">Outdoor 
+    </label>
+
+<!--Check Radio Buttons and Checkboxes by Default-->
+<!--You can set a checkbox or radio button to be checked by default using the checked attribute-->
+<input type="radio" name="test-name" checked>
+
+<!--Nest Many Elements within a Single div Element-->
+<!--The div element also know as a dividsion element, is a general purpose container for other elements
+The div element is probably the most commonly used HTML element of all
+Just like any other non-self-closing element, you can open a div element with <div> and close it on another line with </div>-->
+
+<div class=green-background>
+
+    <form action="/url-where-we-send-the-radio-info">
+        <label for="indoor">
+            <input id="indoor" type="radio" name="indoor-outdoor"> Indoor
+        </label>
+    
+        <label for="outdoor">
+            <input id="outdoor" type="radio" name="indoor-outdoor"> Outdoor
+        </label>
+    </form>
+    
+</div>
+
+<h3> Working with rounded corners :)</h3>
+
+<img class="larger-image thin-green-border"src="https://bit.ly/fcc-relaxing-cat" alt="Relaxing Cat">
+
+<h4> A Circular image :D </h4>
+
+<div class="blueviolet-background">
+<img class="larger-image round-blue-image"src="https://bit.ly/fcc-relaxing-cat" alt="Relaxing Cat">
+</div>
+
+<!--/*Set the id of an Element*/
+/*along with classes each HTML element can also have an id attribute*/
+/*There are benefits to using an id attribute:
+- Use id to style a single element
+- Use id to select and modify specific elements with JavaScript*/
+/*id attributes should be unique. This is best practice. Do not give more than one element the same id attribute*/-->
+<h2 id="cat-photo-element">Cat Photo App</h2>
+
+</body>
+
+</html>
+
