@@ -104,5 +104,6 @@ for example if we wanted to tcread a red 5pixel border around an HTML elemt we c
 
 #cat-photo-element{
     background-color:green;
+    border-radius: 25%;
 }
 
