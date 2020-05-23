@@ -106,6 +106,11 @@ for example if we wanted to tcread a red 5pixel border around an HTML elemt we c
     background-color:green;
 }
 
+
+/*Use Attribute Selectors to Style Elements*/
+
+
+
 /*-------------------------------Basic HTML Part Deux---------------------------------------------------*/
 
 /*declaring Basic HTML Part Deux ids*/
@@ -192,25 +197,44 @@ the amount of space between the elements contnt and it's border*/
         }
 
         /*Add different padding to Each Side of an Element*/
+        /*CSS allows you to control the padding of all four individual sides of an element 
+        with the padding-top, padding-right, padding-bottom, and padding-left properties.*/
 
         .orange-box {
             background-color: orange;
             color: #fff;
-            padding: 20px;
-            margin: 20px
+            padding-top: 200px;
+            padding-right: 200px;
+            padding-bottom: 5px;
+            padding-left: 5px;
+            margin: 20px;
+            text-align: center;
         }
+
+        /*Adding Different Margins to Each Side of an Element*/
+        /*Sometimes you will want to customize an element so that it has a different margin 
+        on each of its sides*/
+        /*CSS allows you to control the margin of all four individual sides of an element 
+        with the margin-tip, margin-righ, margin-bottom, and margin-left propertites.*/
 
         .yellowgreen-box {
             background-color: yellowgreen;
             color: #fff;
             padding: 20px;
-            margin: 20px;
+            margin-top: 40px;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            margin-left: 40px;
         }
+        
+        /*Use Clockwise Notation to Specify the Padding of an Element*/
+        /*Instsead of specifying an element's padding-top, padding-right, padding-bottom, and padding-left properties individually, you can specify them all in one line... like this:*/
+        /*Note: We can also do this with Margins as well*/
 
         .magenta-box {
             background-color: magenta;
             color: #fff;
-            padding: 20px;
-            margin: 20px
+            padding: 10px 20px 10px 20px;
+            margin: 20px 10px 20px 10px; 
         }
         
