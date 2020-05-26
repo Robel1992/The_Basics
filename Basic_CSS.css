@@ -237,4 +237,11 @@ the amount of space between the elements contnt and it's border*/
             padding: 10px 20px 10px 20px;
             margin: 20px 10px 20px 10px; 
         }
+
+        .magenta-box {
+            background-color: magenta;
+            color: #fff;
+            padding: 10px 20px 10px 20px;
+            margin: 20px 10px 20px 10px; 
+        }
         
