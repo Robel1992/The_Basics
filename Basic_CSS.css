@@ -245,3 +245,21 @@ the amount of space between the elements contnt and it's border*/
             margin: 20px 10px 20px 10px; 
         }
         
+
+/*Use Attribute Selectors to Style Elements*/
+/*We've been adding iD or class attributes to elements that we wish to specifically style*/
+/*Use the [attr=value] attribute selector to style the checkboxes in CatPhotoApp*/
+
+/*example*/
+/*This code changes the margins of all elements with the attribute type and a 
+corresponding value of radio*/
+
+[type = 'radio'] {
+    margin: 20px 0px 20px 0px;
+}
+
+/*Understand Absolute versus Relative Units*/
+/*In addition to 'px' CSS has multiple different length unit options that you can use
+for example 'in' and 'mm' refer to inches and millimeters respectively
+These are absolute units*/
+*/
